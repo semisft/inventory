@@ -1,0 +1,34 @@
+package com.semisft.inventory.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class ProductCategory extends BaseId {
+	private String name;
+	private String description;
+
+	public ProductCategory() {
+		super();
+	}
+
+	public ProductCategory(Long id) {
+		super(id);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+}
